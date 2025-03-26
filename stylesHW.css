@@ -1,0 +1,55 @@
+@charset "UTF-8";
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFB07F;
+    font-family: Arial, Helvetica, "sans-serif";
+    font-size: 18px;
+    text-align: center;
+}
+h1
+{
+    font-size: 36px;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+h2
+{
+    font-size: 30px;
+    font-style: italic;
+    border: 20px white;
+    background-color: #C3DDFF
+}
+#page
+{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #FFB07F;
+
+}
+#left-column
+{
+    float: left;
+    width: 384px;
+    text-align: center;
+}
+#right-column
+{
+    float: right;
+    width: 335px;
+    text-align: left;
+}
+#right-column h2
+{
+    font-weight: bold;
+}
+#fun-facts {
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+    border: double 10px #C3DDFF;
+}
