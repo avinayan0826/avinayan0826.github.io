@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="stylesHW.css" rel="stylesheet" type="text/css">
+    <title>Theatres in London</title>
+</head>
+<body>
+<div id="page">
+    <h1>Theatres in London</h1>
+    <h2>Wyndham's Theatre</h2>
+    <h3>Covent Garden</h3>
+<div id="left-column">
+    <img src="wyndhamtheatre.webp", width="450" height="320" alt="The Wyndham's Theatre">
+<p>
+    <a href="lyric.html">See our page on the Lyric Theatre!</a>
+    <a href="apollovictoria.html">See our page on the Apollo Victoria Theatre!</a>
+    <a href="https://www.google.com/search?q=west+end+theatres&oq=west+end+theatres&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDM2MTlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">Discover more London Theatres</a>
+</p>
+</div>
+<div id="right-column">
+    <h3>Information</h3>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+<form>
+    <p id="box">Click to reveal the shows that have been performed here</p>
+    <button type="button" onclick="document.getElementById('box').innerHTML = 'Next To Normal, Oedipus, Oklahoma!'">Click to reveal</button>
+</form>
+    <form name="form" onsubmit="return validate(event)">
+        <p id="box2">Enter your email to sign up to receive news about upcoming shows in London!</p>
+        <input type="text" name="email" id="email">
+        <button type="submit">Sign up</button>
+    </form>
+    <script>
+        function validate(event) {
+            event.preventDefault()
+            var x = document.forms["form"]["email"].value;
+            if (x== "") {
+                event.preventDefault()
+                document.getElementById("box2").style.color = "red";
+                document.getElementById("box2").innerHTML = "Please enter a valid email."
+                return false;
+            } else if (!x.includes("@")) {
+                event.preventDefault()
+                document.getElementById("box2").style.color = "red";
+                document.getElementById("box2").innerHTML = "Please enter a valid email."
+                return false;
+            } else {
+                document.getElementById("box2").innerHTML = "Thank you for signing up! We will be in contact with you shortly.";
+                return true;
+            }
+        }
+    </script>
+</div>
+<h4 id="fun-facts">Fun Facts!</h4>
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
+    </ul>
+</div>
+</body>
+</html>
